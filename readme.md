@@ -1,6 +1,6 @@
 # ads-throq-atdd: Protractor + TypeScript + CucumberJS
 ![GitHub Logo](/raw/master/adsteleca.png)
-Format: ![Alt Text](url)
+
 
 ## About
 
@@ -47,10 +47,10 @@ See the [Protractor](http://www.protractortest.org/#/) + [TypeScript](https://ww
       - [Optional] : ads-throq-atdd $ ncu (Checks for latest version of dependecies)
       - [Optional] : ads-throq-atdd $ ncu -u (package.json upgraded to all latest versions of dependencies)
     - ads-throq-atdd $ npm run update [Please make sure you have proxy settings enabled]
-    - ads-throq-atdd $ npm run protractor -- --env=qamb --cucumberOpts.tags="@smoke"
+    - ads-throq-atdd $ npm run protractor -- --env=local --cucumberOpts.tags="@smoke"
     - Please make sure runner.ts has [directConnect: true] [browserName: chrome] and no selenium server      flags are set true.
 
-    ![In Action]()
+
 
 ### Available NPM Scripts
 
