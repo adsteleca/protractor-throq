@@ -1,0 +1,5 @@
+{
+  "environments": {
+    "local": "http://localhost:4200/login"
+  }
+}
