@@ -126,7 +126,7 @@ export let config: Config = {
         err.name + "\n" +
         "******************************************************************************************" + "\n" +
         "Invalid environment argument ==> " + cliArg.env + "\n" +
-        "Availble environments are ==> local/dev/qamb/qambmob/regression/regressionmob/prod/prodmob" + "\n" +
+        "Availble environments are ==> local/dev/regression/" + "\n" +
         "******************************************************************************************");
     }
   },

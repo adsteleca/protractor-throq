@@ -1,0 +1,13 @@
+node_modules/
+reports/
+typescript/*.js
+typescript/*/*.js
+typescript/*/*/*.js
+typescript/*/*/*/*.js
+test-data/data.json
+*.bak
+*/*.bak
+*/*/*.bak
+*/*/*/*.bak
+debug.log
+.DS_Store/
