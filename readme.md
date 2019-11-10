@@ -1,5 +1,5 @@
 # ads-throq-atdd: Protractor + TypeScript + CucumberJS
-![Throq]()
+
 
 ## About
 
