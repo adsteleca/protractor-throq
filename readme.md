@@ -1,5 +1,6 @@
 # ads-throq-atdd: Protractor + TypeScript + CucumberJS
-![adsteleca]()
+![GitHub Logo](/raw/master/adsteleca.png)
+Format: ![Alt Text](url)
 
 ## About
 
