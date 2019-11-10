@@ -2003,10 +2003,9 @@
       "dev": true
     },
     "diff": {
-      "version": "3.3.0",
-      "resolved": "https://registry.npmjs.org/diff/-/diff-3.3.0.tgz",
-      "integrity": "sha512-w0XZubFWn0Adlsapj9EAWX0FqWdO4tz8kc3RiYdWLh4k/V8PTb6i0SMgXt0vRM3zyKnT8tKO7mUlieRQHIjMNg==",
-      "dev": true
+      "version": "3.5.0",
+      "resolved": "https://registry.npmjs.org/diff/-/diff-3.5.0.tgz",
+      "integrity": "sha512-A46qtFgd+g7pDZinpnwiRJtxbC1hpgf0uzP3iG89scHk0AUC7A1TGxf5OiiOUv/JMZR8GOt8hL900hV0bOy5xA=="
     },
     "doctrine": {
       "version": "0.7.2",
@@ -5616,11 +5615,6 @@
           "requires": {
             "ms": "^2.1.1"
           }
-        },
-        "diff": {
-          "version": "3.5.0",
-          "resolved": "https://registry.npmjs.org/diff/-/diff-3.5.0.tgz",
-          "integrity": "sha512-A46qtFgd+g7pDZinpnwiRJtxbC1hpgf0uzP3iG89scHk0AUC7A1TGxf5OiiOUv/JMZR8GOt8hL900hV0bOy5xA=="
         },
         "execa": {
           "version": "1.0.0",
