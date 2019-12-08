@@ -18,10 +18,7 @@ export class LoginPage {
 
 
   public setLogin = async (userName: string, password: string) => {
-    let isState = await element(object.Locators.Selectcurrency).isPresent();
-    console.log(object.Locators.Selectcurrency + "aaa"+isState)
-    await element(object.Locators.Selectcurrency).sendKeys(userName);
-    //  await this.elTxtEmail.sendKeys(userName);
+    await this.elTxtEmail.sendKeys(userName);
     await this.elTxtPassword.sendKeys(password);
     return this.elBtnLogin.click();
   };

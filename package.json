@@ -1,7 +1,7 @@
 {
   "name": "ads-throq-atdd",
   "version": "2.0.0",
-  "description": "A E2E Test Automation Framework Powered by Protractor+CucumberJS+Typescript for EASE-Web Apps ",
+  "description": "A E2E Test Automation Framework Powered by Protractor+CucumberJS+Typescript for ads-Web Apps ",
   "main": "runner.ts",
   "pulsepage": "",
   "repository": {
@@ -76,7 +76,7 @@
   },
   "scripts": {
     "lint": "tslint --project \".\" --out code.review.log --exclude utilities/hooks.ts --format \"stylish\"",
-    "clean": "rimraf ./typescript && rimraf ./test-data/data.json && rimraf code.review.log && rimraf ./reports/global/*/test* && rimraf ./reports/global/html/screenshot/* && rimraf ./logs/webdriver*",
+    "clean": "rimraf ./typescript && rimraf ./test-data/data.json && rimraf code.review.log  && rimraf ./logs/webdriver*",
     "compile": "tsc",
     "update": "webdriver-manager update",
     "start": "webdriver-manager start",
@@ -84,7 +84,7 @@
     "protractor": "protractor typescript/runner.js",
     "postprotractor": "npm run clean"
   },
-  "author": "EASE Core QS",
+  "author": "ads Core QS",
   "email": "",
   "contributors": [
     ""

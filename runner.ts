@@ -22,7 +22,8 @@ chai.use(chaiAsPromised);
 let browserParam = cliArg.browser;
 let setNativeRun = cliArg.runmode;
 export let config: Config = {
-  directConnect: setNativeRun,
+  // directConnect: setNativeRun,
+  directConnect: true,
   enableElementCacheCleanup: true,
   javascriptEnabled: true,
   ignoreProtectedModeSettings: true,
@@ -36,7 +37,7 @@ export let config: Config = {
 
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
-    browserName: browserParam
+    browserName: 'firefox'
   },
 
   specs: [
@@ -126,7 +127,7 @@ export let config: Config = {
         err.name + "\n" +
         "******************************************************************************************" + "\n" +
         "Invalid environment argument ==> " + cliArg.env + "\n" +
-        "Availble environments are ==> local/dev/regression/" + "\n" +
+        "Availble environments are ==> local/dev/qamb/qambmob/regression/regressionmob/prod/prodmob" + "\n" +
         "******************************************************************************************");
     }
   },
@@ -136,13 +137,12 @@ export let config: Config = {
     let options: any = {
       theme: "bootstrap",
 
-      jsonFile: path.resolve(process.cwd()) + "/reports/global/json/testrun_" +
-        dateFormat(Date(), "runTime") + ".json",
+      jsonFile: path.resolve(process.cwd()) + "/reports/global/json/"+cliArg.testsuiterunid+"_"+ dateFormat(Date(), "runTime") +".json",
 
       output: path.resolve(process.cwd()) + "/reports/global/html/testrun_" +
         dateFormat(Date(), "runTime") + ".html",
 
-      ignoreBadJsonFile: true,
+      ignoreBadJsonFile: false,
       name: "ads-throq-atdd",
       storeScreenShots: true,
       reportSuiteAsScenarios: true,
@@ -150,7 +150,14 @@ export let config: Config = {
 
       // mock Data : This may be deleted since all these details we are tracking in dashboard
       metadata: {
-
+        "Test Run ID": browser.params.testRunID,
+        "App Name": "Throq Web App",
+        "Test Environment": "Production URL",
+        "Browser": "Chrome v74",
+        "Platform": "Windows 10 OS",
+        "Parallel": "NA",
+        "Executed": "NA",
+        "Run Date": dateFormat(Date.now(), "dddd, mmmm dS, yyyy, h:MM:ss TT"),
       }
     };
 
@@ -170,7 +177,7 @@ export let config: Config = {
     pagespath: path.resolve(process.cwd()) + "/pages",
     modalspath: path.resolve(process.cwd()) + "/objects/modals",
     utilpath: path.resolve(process.cwd()) + "/utilities",
-    hookspath: path.resolve(process.cwd()) + "/reports/global/json/testrun_",
+    hookspath: path.resolve(process.cwd()) + "/reports/global/json/"+cliArg.testsuiterunid+"_",
   },
 
   // ****************************************************************************
